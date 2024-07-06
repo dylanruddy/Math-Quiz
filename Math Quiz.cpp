@@ -1,35 +1,42 @@
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
-int testscore;
+int main() {
+    int testscore = 0;
 
-string introduction = " Welcome to the Math Quiz! This is a 10 question test, your score will appear at the end. Press any key to begin! ";
-int teststart;
+    string introduction = "Welcome to the Math Quiz! This is a 10 question test, your score will appear at the end. Press Enter to begin!";
+    int teststart;
+    string question1 = "What is 2 + 2?";
+    int question1answer;
 
-string question1 = " What is 2 + 2? ";
-int question1answer;
+    string finaltestscore = "Your test score is ";
 
-string finaltestscore = " Your test score is ";
+    vector<string> questionone = {"A. 1", "B. 2", "C. 3", "D. 4"};
 
-int main()
-{
+    // Display introduction
+    cout << introduction << endl;
+    cin.get();  // Wait for user to press Enter
 
-cout << introduction;
+    // Display the first question and options
+    cout << question1 << endl;
+    for (const string& option : questionone) {
+        cout << option << endl;
+    }
 
-cout << question1;
+    // Get user answer
+    cout << "Enter your answer (1-4): ";
+    cin >> question1answer;
 
-cin >> question1answer;
-
-    if (question1answer==4){
+    // Check the answer and update the score
+    if (question1answer == 4) {
         testscore = 1;
     }
 
+    // Display the final test score
+    cout << finaltestscore << testscore << endl;
 
-
-cout << testscore;
-
-
-
+    return 0;
 }
