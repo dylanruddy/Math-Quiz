@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
     int testscore = 0;
-    int question1answer, question2answer, question3answer, question4answer;
+    int question1answer, question2answer, question3answer, question4answer, question5answer, question6answer, question7answer, question8answer, question9answer, question10answer;
 
     string introduction = "Welcome to the Math Quiz! This is a 10 question test, your score will appear at the end. Press Enter to begin!";
     cout << introduction << endl;
@@ -21,41 +21,14 @@ int main() {
 
 //QUESTION 1
 
-    cout << questions[0].first << endl;
+    cout << questions[0,1,2,3,4].first << endl;
     for (const string& option : questions[0].second) {
         cout << option << endl;
     }
     cout << "Enter your answer (1-4): ";
     cin >> question1answer;
 
-//QUESTION 2
 
-
-    cout << questions[1].first << endl;
-    for (const string& option : questions[1].second) {
-        cout << option << endl;
-    }
-    cout << "Enter your answer (1-4): ";
-    cin >> question2answer;
-
-//QUESTION 3
-
-
-        cout << questions[2].first << endl;
-    for (const string& option : questions[2].second) {
-        cout << option << endl;
-    }
-    cout << "Enter your answer (1-4): ";
-    cin >> question3answer;
-
-//QUESTION 4
-
-   cout << questions[3].first << endl;
-   for (const string& option : questions[3].second) {
-    cout << option << endl;
-   }
-   cout << "Enter your answer (1-4): ";
-   cin >> question4answer;
 
 
 
