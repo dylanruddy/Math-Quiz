@@ -22,7 +22,7 @@ int main() {
         {"What is 10 % 10?", {"A. 1", "B. 10", "C. 11", "D. 100"}},
         {"What is 154 + 20?", {"A. 174", "B. 275", "C. 174", "D. 3080"}},
         {"What is 800 * 2?", {"A. 1600", "B. 160", "C. 16000", "D. 16"}},
-        {"What is 534 + 50?", {"A. 584", "B. 585", "C. 586", "D. 587"}}
+        {"What is 534 + 50?", {"A. 585", "B. 584", "C. 586", "D. 587"}}
     };
 
     // Question 1
@@ -120,7 +120,7 @@ int main() {
     if (question7answer == 1) testscore++;
     if (question8answer == 1) testscore++;
     if (question9answer == 1) testscore++;
-    if (question10answer == 1) testscore++;
+    if (question10answer == 2) testscore++;
 
     cout << "Your test score is " << testscore << endl;
 
