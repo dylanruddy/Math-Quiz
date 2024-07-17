@@ -8,8 +8,10 @@ int main() {
     int testscore = 0;
     int question1answer, question2answer, question3answer, question4answer, question5answer, question6answer, question7answer, question8answer, question9answer, question10answer;
 
-    string introduction = "Welcome to the Math Quiz! This is a 4 question test, your score will appear at the end. Press Enter to begin!";
-    cout << introduction << endl;
+    cout << "WELCOME TO THE DYLAN MATH QUIZ!" << endl;
+     cout << " " << endl;
+    cout << "This is a 10 question test, your score will be calculated and appear at the end of the test." << endl;
+    cout << "Press Any Key To Begin..." << endl;
     cin.get();  // Wait for user to press Enter
 
     vector<pair<string, vector<string>>> questions = {
@@ -26,6 +28,7 @@ int main() {
     };
 
     // Question 1
+    cout << "QUESTION 1:" << endl;
     cout << questions[0].first << endl;
     for (const string& option : questions[0].second) {
         cout << option << endl;
@@ -34,6 +37,7 @@ int main() {
     cin >> question1answer;
 
     // Question 2
+    cout << "QUESTION 2:" << endl;
     cout << questions[1].first << endl;
     for (const string& option : questions[1].second) {
         cout << option << endl;
@@ -42,6 +46,7 @@ int main() {
     cin >> question2answer;
 
     // Question 3
+    cout << "QUESTION 3:" << endl;
     cout << questions[2].first << endl;
     for (const string& option : questions[2].second) {
         cout << option << endl;
@@ -50,6 +55,7 @@ int main() {
     cin >> question3answer;
 
     // Question 4
+    cout << "QUESTION 4:" << endl;
     cout << questions[3].first << endl;
     for (const string& option : questions[3].second) {
         cout << option << endl;
@@ -58,6 +64,7 @@ int main() {
     cin >> question4answer;
 
     // Question 5
+    cout << "QUESTION 5:" << endl;
     cout << questions[4].first << endl;
     for (const string& option : questions[4].second) {
         cout << option << endl;
@@ -66,47 +73,47 @@ int main() {
     cin >> question5answer;
 
     // Question 6
+    cout << "QUESTION 6:" << endl;
     cout << questions[5].first << endl;
     for (const string& option : questions[5].second){
         cout << option << endl;
     }
-    
     cout << "Enter your answer (1-4): ";
     cin >> question6answer;
 
     // Question 7
+    cout << "QUESTION 7:" << endl;
     cout << questions[6].first << endl;
     for (const string& option : questions[6].second){
         cout << option << endl;
     }
-
     cout << "Enter your answer (1-4): ";
     cin >> question7answer;
 
     // Question 8
-    cout << questions[7].first;
+    cout << "QUESTION 8:" << endl;
+    cout << questions[7].first << endl;
     for (const string& option : questions[7].second){
         cout << option << endl;
     }  
-
     cout << "Enter your answer (1-4): ";
     cin >> question8answer;
 
     // Question 9
-    cout << questions[8].first;
+    cout << "QUESTION 9:" << endl;
+    cout << questions[8].first << endl;
     for (const string& option : questions[8].second){
         cout << option << endl;
     }  
-
     cout << "Enter your answer (1-4): ";
     cin >> question9answer;
 
     // Question 10
+    cout << "QUESTION 10:" << endl;
     cout << questions[9].first << endl;
     for (const string& option : questions[9].second){
         cout << option << endl;
     }
-
     cout << "Enter your answer (1-4): ";
     cin >> question10answer;
 
@@ -123,6 +130,8 @@ int main() {
     if (question10answer == 2) testscore++;
 
     cout << "Your test score is " << testscore << endl;
+
+system("PAUSE");
 
     return 0;
 }
