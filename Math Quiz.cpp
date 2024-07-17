@@ -20,7 +20,7 @@ int main() {
         {"What is 71 + 60?", {"A. 153", "B. 134", "C. 143", "D. 131"}},
         {"What is 531 + 2?", {"A. 532", "B. 533", "C. 542", "D. 532"}},
         {"What is 10 % 10?", {"A. 1", "B. 10", "C. 11", "D. 100"}},
-        {"What is 154 + 20?", {"A. 174", "B. 275", "C. 174", "D. 3080"}},
+        {"What is 154 + 20?", {"A. 175", "B. 275", "C. 174", "D. 3080"}},
         {"What is 800 * 2?", {"A. 1600", "B. 160", "C. 16000", "D. 16"}},
         {"What is 534 + 50?", {"A. 585", "B. 584", "C. 586", "D. 587"}}
     };
@@ -118,7 +118,7 @@ int main() {
     if (question5answer == 4) testscore++;
     if (question6answer == 1) testscore++;
     if (question7answer == 1) testscore++;
-    if (question8answer == 1) testscore++;
+    if (question8answer == 3) testscore++;
     if (question9answer == 1) testscore++;
     if (question10answer == 2) testscore++;
 
