@@ -129,7 +129,7 @@ int main() {
     if (question9answer == 1) testscore++;
     if (question10answer == 2) testscore++;
 
-    cout << "Your test score is " << testscore << endl;
+    cout << "Your test score is " << testscore << "/10." << endl;
 
 system("PAUSE");
 
